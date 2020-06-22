@@ -1,0 +1,81 @@
+•	Creating an ArrayList.
+// Declaring:
+ArrayList<Integer> ages;
+// Initializing:
+ages = new ArrayList<Integer>();
+
+// Declaring and initializing in one line:
+ArrayList<String> babyNames = new ArrayList<String>();
+ArrayList can not contains primitive data types (like int , float , double) it can only contains Object while Array can contain both primitive data types as well as objects.
+
+•	Adding a new ArrayList item using add().
+rrayList<String> toDoList = new ArrayList<String>();
+    String toDo1 = "Water plants";
+    // Add more to-dos here:
+    String toDo2 = "Wash dishes";
+    String toDo3 = "Clean floors";
+    
+    
+    // Add to-dos to toDoList
+    toDoList.add(toDo1);
+    toDoList.add(toDo2);
+    toDoList.add(toDo3);
+    
+    
+    System.out.println(toDoList);
+
+•	Accessing the size of an ArrayList using size().
+ArrayList<String> shoppingCart = new ArrayList<String>();
+
+shoppingCart.add("Trench Coat");
+System.out.println(shoppingCart.size());
+// 1 is printed
+shoppingCart.add("Tweed Houndstooth Hat");
+System.out.println(shoppingCart.size());
+// 2 is printed
+shoppingCart.add("Magnifying Glass");
+System.out.println(shoppingCart.size());
+// 3 is printed
+
+•	Finding an item by index using get().
+ArrayList<String> shoppingCart = new ArrayList<shoppingCart>();
+
+shoppingCart.add("Trench Coat");
+shoppingCart.add("Tweed Houndstooth Hat");
+shoppingCart.add("Magnifying Glass");
+
+System.out.println(shoppingCart.get(2));
+
+•	Changing the value of an ArrayList item using set().
+Array:
+String[] shoppingCart = {"Trench Coat", "Tweed Houndstooth Hat", "Magnifying Glass"};
+
+shoppingCart[0] = "Tweed Cape";
+
+// shoppingCart now holds ["Tweed Cape", "Tweed Houndstooth Hat", "Magnifying Glass"]
+ArrayList:
+ArrayList<String> shoppingCart = new ArrayList<shoppingCart>();
+
+shoppingCart.add("Trench Coat");
+shoppingCart.add("Tweed Houndstooth Hat");
+shoppingCart.add("Magnifying Glass");
+
+shoppingCart.set(0, "Tweed Cape");
+
+// shoppingCart now holds ["Tweed Cape", "Tweed Houndstooth Hat", "Magnifying Glass"]
+
+•	Removing an item with a specific value using remove().
+ArrayList<String> shoppingCart = new ArrayList<String>();
+
+shoppingCart.add("Trench Coat");
+shoppingCart.add("Tweed Houndstooth Hat");
+shoppingCart.add("Magnifying Glass");
+
+shoppingCart.remove(1);
+// shoppingCart now holds ["Trench Coat", "Magnifying Glass"]
+
+•	Retrieving the index of an item with a specific value using indexOf().
+// detectives holds ["Holmes", "Poirot", "Marple", "Spade", "Fletcher", "Conan", "Ramotswe"];
+System.out.println(detectives.indexOf("Fletcher"));
+
+
