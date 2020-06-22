@@ -1,0 +1,38 @@
+public class CarLoan {
+  double loanAmount;
+  double interestRate;
+  double loanLength;
+  double downPayment;
+  boolean canCalculate;
+  //Constructor method
+  public CarLoan(double amountLoan, double interest, double length, double downpayment) {
+    if(amountLoan > 0 && interest >=0 && length > 0 && downpayment >=0){ 
+      loanAmount = amountLoan;
+      interestRate = interest;
+      loanLength = length;
+      downPayment = downpayment;
+      canCalculate = true;
+    }else if(downpayment>= amountLoan){
+    System.out.println("The car can be paid in full.");
+    canCalculate = false;
+    }else{
+      System.out.println("Error! You must take out a valid car loan.");
+      canCalculate = false;
+    }
+  } 
+  //Calculator method
+  public double calculator(){
+    double remainingBalance = loanAmount - downPayment;
+    double interest = interestRate/100;
+    double length = loanLength * 12;
+    double monthlyWithoutInterest = remainingBalance / length;
+    double monthlyPayment = monthlyWithoutInterest + monthlyWithoutInterest * interest/12;
+    return monthlyPayment;
+  }
+  //main method
+	public static void main(String[] args) {
+    CarLoan customerOne = new CarLoan(10000,5,3,2000);
+    System.out.println(customerOne.calculator());
+
+	}
+}
