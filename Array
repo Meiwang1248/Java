@@ -1,0 +1,46 @@
+Array does not add elements or remove elements.
+To represent dynamic lists, we can use Java’s ArrayLists. ArrayLists allow us to:
+•	Store elements of the same type (just like arrays)
+•	Access elements by index (just like arrays)
+•	Add elements
+•	Remove elements
+
+-Creating an Array
+double[] prices = {13.15, 15.87, 14.22, 16.66};
+String[] clothingItems = {"Tank Top", "Beanie", "Funny Socks", "Corduroys"};
+
+-Importing Arrays
+import java.util.Arrays;
+
+-Getting Elements by index
+double[] prices = {13.1, 15.87, 14.22, 16.66};
+
+System.out.println(prices[1]);
+
+
+-Creating an empty Array with size n
+String[] menuItems = new String[n];
+
+-Length
+double[] prices = {13.1, 15.87, 14.22, 16.66};
+
+System.out.println(prices.length);
+
+
+-String[] args
+public class HelloYou {
+  public static void main(String[] args) {
+    System.out.println("Hello " + args[0]);  
+  }
+}
+When we run the file HelloYou in the terminal with an argument of "Laura":
+java HelloYou Laura
+We get the output:
+Hello Laura
+The String[] args would be interpreted as an array with one element, "Laura".
+
+
+
+
+
+
